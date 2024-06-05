@@ -5,10 +5,17 @@ import "./App.css";
 import Hello from "./components/Hello";
 import Saikat from "./components/Saikat";
 import Shanto from "./components/Shanto";
+import Fruits from "./components/fruits";
+import Fruit from "./components/fruit";
 
 function App() {
   const [count, setCount] = useState(0);
-
+  const person = {
+    name: "Saikat",
+    message: "Hi There",
+    emoji: "wooo",
+    seatNumber: [1, 4, 7],
+  };
   return (
     <>
       <div>
@@ -33,15 +40,21 @@ function App() {
       </p>
 
       <div className="Hello">
-        <Hello name="Saikat" message="Hi There" emoji="wooo" />
-        <Hello name="Shanto" message="Do Codes" />
-        <Hello name="Mash" message="Bowling Man" />
+        <Hello person={person} age={10} />
+        {/* <Hello name="Shanto" message="Do Codes" />
+        <Hello name="Mash" message="Bowling Man" /> */}
       </div>
-      <p className="Saikat">
+      <div className="Saikat">
         <Saikat />
-      </p>
+      </div>
       <div className="Shanto">
         <Shanto />
+      </div>
+      <div className="fruits">
+        <Fruits />
+      </div>
+      <div className="fruit">
+        <Fruit />
       </div>
     </>
   );
