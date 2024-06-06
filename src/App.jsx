@@ -7,6 +7,7 @@ import Saikat from "./components/Saikat";
 import Shanto from "./components/Shanto";
 import Fruits from "./components/fruits";
 import Fruit from "./components/fruit";
+import ConditionalComponent from "./components/ConditionalComponent";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -55,6 +56,9 @@ function App() {
       </div>
       <div className="fruit">
         <Fruit />
+      </div>
+      <div className="ConditionalComponent">
+        <ConditionalComponent />
       </div>
     </>
   );
