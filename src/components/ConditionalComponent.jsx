@@ -2,6 +2,8 @@ import Code from "./Code";
 import Welcome from "./welcome";
 
 export default function conditionalComponent() {
+  // 1st style of component (but its a wrong method)
+
   // const display = true;
   // if (display) {
   //   return (
@@ -20,6 +22,9 @@ export default function conditionalComponent() {
   // }
 
   let message;
+
+  // 2nd style of function (its ok, but dont call return twice)
+
   // let messageOne = <h1> this is saikat </h1>;
   // let messageTwo = <h1> this is shanto </h1>;
   const display = false;
@@ -28,10 +33,17 @@ export default function conditionalComponent() {
   // } else {
   //   return messageTwo;
   // }
-  if (display) {
-    message = <h1> this is saikat </h1>;
-  } else {
-    message = <h1> this is shanto </h1>;
-  }
-  return message;
+
+  // 3rd style of function (great style of calling)
+  // if (display) {
+  //   message = <h1> this is saikat </h1>;
+  // } else {
+  //   message = <h1> this is shanto </h1>;
+  // }
+  // return message;
+
+  // 4th style of calling function (turner operator)
+
+  // return display ? <h1> this is saikat </h1> : <h1> this is shanto </h1>;
+  return display ? <Welcome /> : <Code />;
 }
