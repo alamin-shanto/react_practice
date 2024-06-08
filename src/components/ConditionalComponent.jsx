@@ -35,6 +35,7 @@ export default function conditionalComponent() {
   // }
 
   // 3rd style of function (great style of calling)
+
   // if (display) {
   //   message = <h1> this is saikat </h1>;
   // } else {
