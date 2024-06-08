@@ -6,26 +6,31 @@ export default function Fruits() {
       name: "Apple",
       price: 10,
       Quality: "good",
+      Soldout: false,
     },
     {
       name: "Watermelon",
       price: 20,
       Quality: "good",
+      Soldout: true,
     },
     {
       name: "Guava",
       price: 5,
       Quality: "bad",
+      Soldout: true,
     },
     {
       name: "Mango",
       price: 15,
       Quality: "good",
+      Soldout: false,
     },
     {
       name: "Pineapple",
       price: 30,
       Quality: "good",
+      Soldout: true,
     },
   ];
   return (
@@ -37,6 +42,7 @@ export default function Fruits() {
             name={fruit.name}
             price={fruit.price}
             Quality={fruit.Quality}
+            Soldout={fruit.Soldout}
           ></Fruit>
         ))}
       </ul>

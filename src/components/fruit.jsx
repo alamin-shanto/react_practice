@@ -1,8 +1,22 @@
-export default function Fruit({ name, price, Quality }) {
+export default function Fruit({ name, price, Quality, Soldout }) {
   return (
-    <div>
-      {name} {Quality} {""}
-      {price}
-    </div>
+    <>
+      {/* {name} {Quality} {""} {price} */}
+      {/* {price > 15 ? (
+        <li>
+          {name} {""}
+          {Quality} {""}
+          {price}
+        </li>
+      ) : (
+        ""
+      )} */}
+      <li>
+        {name} {""}
+        {Quality} {""}
+        {price} {""}
+        {Soldout ? "Soldout" : "In Stock"}
+      </li>
+    </>
   );
 }
