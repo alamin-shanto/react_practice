@@ -1,3 +1,4 @@
+import GoodQualityFruits from "./GoodQualityFruits";
 export default function Fruit({ name, price, Quality, Soldout }) {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Fruit({ name, price, Quality, Soldout }) {
         {Quality} {""}
         {price} {""}
         {Soldout ? "Soldout" : "In Stock"}
+        {Quality === "good" ? "Display" : ""}
       </li>
     </>
   );

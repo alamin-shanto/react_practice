@@ -8,7 +8,9 @@ import Shanto from "./components/Shanto";
 import Fruits from "./components/fruits";
 import Fruit from "./components/fruit";
 import ConditionalComponent from "./components/ConditionalComponent";
-
+import Message from "./components/Message";
+import Counter from "./components/Counter";
+import Form from "./components/Form";
 function App() {
   const [count, setCount] = useState(0);
   const person = {
@@ -54,11 +56,20 @@ function App() {
       <div className="fruits">
         <Fruits />
       </div>
-      <div className="fruit">
+      {/* <div className="fruit">
         <Fruit />
-      </div>
+      </div> */}
       <div className="ConditionalComponent">
         <ConditionalComponent />
+      </div>
+      <div className="Message">
+        <Message />
+      </div>
+      <div className="Counter">
+        <Counter />
+      </div>
+      <div className="Form">
+        <Form />
       </div>
     </>
   );

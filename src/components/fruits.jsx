@@ -43,6 +43,7 @@ export default function Fruits() {
             price={fruit.price}
             Quality={fruit.Quality}
             Soldout={fruit.Soldout}
+            // GoodQualityFruits={fruit.Quality}
           ></Fruit>
         ))}
       </ul>
